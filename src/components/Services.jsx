@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 
-import src1 from "../assets/wttech-assets/activity.svg";
-import src2 from "../assets/wttech-assets/video.svg";
-import src3 from "../assets/wttech-assets/activity.svg";
-
-
 export default function Services() {
+
   const serviceInfo = [
     {
       id: 1,
@@ -33,7 +29,7 @@ export default function Services() {
   const serviceCard = serviceInfo.map((data) => (
       <div 
         key={data.id}
-        className="font-interLight text-center shadow-2xl rounded-2xl py-8 pb-8 px-6 flex flex-col justify-center items-center gap-4 my-6 md:w-1/2 md:m-auto" 
+        className="font-interLight text-center shadow-2xl rounded-2xl py-8 pb-8 px-6 flex flex-col justify-center items-center gap-4 my-6 md:w-1/2 md:m-auto md:my-6 lg:w-1/3" 
       >
         <img 
           src={data.src} 
@@ -56,15 +52,14 @@ export default function Services() {
 
   return (
     <>
-      <div className="text-center mt-10 mb-10">
+      <div className="text-center mt-20 mb-20">
         <h3 className="uppercase">
           Services
         </h3>
 
         <h4 className="text-4xl font-bold mt-3">Our Vision & Our Goal</h4>
 
-        <div className="mt-10 lg:flex lg:flex-row lg:justify-between">
-          
+        <div className="mt-10 lg:flex lg:flex-row md:gap-10 lg:gap0 ">
           {serviceCard}
         </div>
       </div>

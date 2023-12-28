@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../assets/wttech-assets/logo-wttech.png";
-// import logo2 from "../assets/wttech-assets/logo-wttech-2.png";
+import logo from "../assets/wttech-assets/logo-wttech-main-edit1.png";
 import hamburger from "../assets/wttech-assets/icon-hamburger.svg";
 import close from "../assets/wttech-assets/icon-close.svg";
 
@@ -20,9 +19,11 @@ export default function Header() {
   return (
     <>
       <header className="pt-6 pb-6 px-6 flex justify-between items-center md:mx-20 md:pt-0 md:pb-0 md:mt-[-30px] md:px-0 lg:mx-[140px]">
-        <Link to="/">
-          {/* <img src={logo} alt="Wttech logo" className="w-20" /> */}
-          <h1 className="text-2xl text-green-700">Wttech</h1>
+        <Link to="/" className="flex justify-center items-center gap-2  ">
+          <img src={logo} alt="Wttech logo" className="w-10" />
+          <h1 className="text-2xl text-gray-700 uppercase tracking-widest">
+            Wttech
+          </h1>
         </Link>
 
         <img
@@ -38,10 +39,15 @@ export default function Header() {
           className={`${
             toggleNav 
               ? "w-full" 
-              : "hidden"} h-full z-20 text-black fixed top-0 left-0 p-6 text-center text-xl uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0`}
+              : "hidden"} h-full z-20 text-black fixed top-0 left-0 p-6 text-center text-xl bg-white uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0`}
         >
           <div className="nav-header flex justify-between items-center">
-            <img src={logo} alt="Wttech logo" className="md:hidden" />
+            <Link to="/" className="flex justify-center items-center gap-2 md:hidden">
+              <img src={logo} alt="Wttech logo" className="w-10" />
+              <h1 className="text-2xl text-gray-700 uppercase tracking-widest">
+                Wttech
+              </h1>
+            </Link>
 
             <img
               src={close}

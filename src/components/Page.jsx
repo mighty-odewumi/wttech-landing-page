@@ -1,6 +1,8 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import Services from "./Services";
+import Team from "./Team";
+
 
 export default function Page() {
   return (
@@ -10,8 +12,10 @@ export default function Page() {
 
         <Hero />
 
-        <main className="font-inter mx-6 md:mx-20">
+        <main className="text-center font-inter mx-6 md:mx-20">
           <Services />
+
+          <Team />
         </main>
       </div>
     </>

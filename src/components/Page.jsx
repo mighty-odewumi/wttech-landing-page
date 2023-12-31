@@ -1,13 +1,18 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Services from "./Services";
 import Team from "./Team";
-
+import { motion } from "framer-motion";
 
 export default function Page() {
   return (
     <>
-      <div className="">
+      <motion.div 
+        className=""
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, delay: 1, type: "spring", }}
+      >
         <Header />
 
         <Hero />
@@ -17,7 +22,9 @@ export default function Page() {
 
           <Team />
         </main>
-      </div>
+
+        <Footer />
+      </motion.div>
     </>
   )
 }

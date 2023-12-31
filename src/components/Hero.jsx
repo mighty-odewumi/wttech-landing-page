@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hero from "../assets/wttech-assets/hero-assets/hero31.avif";
+import hero from "../assets/wttech-assets/hero-assets/hero28.jpg";
 import learnMore from "../assets/wttech-assets/learn-more.svg";
 
 

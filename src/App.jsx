@@ -5,7 +5,7 @@ import {
   createRoutesFromElements 
 } from "react-router-dom";
 import Page from "./components/Page";
-
+import ComingSoon from "./components/ComingSoon";
 
 export default function App() {
 
@@ -13,6 +13,7 @@ export default function App() {
     <Route 
       path="/"
       element={<Page />}
+      errorElement={<ComingSoon />}
     />
   ));
 

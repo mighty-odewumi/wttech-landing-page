@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   content: [
     "./index.html",
@@ -10,6 +9,7 @@ export default {
       colors: {
         primarygreen: "#22c55e",
         primaryblack: "#1e293b",
+        footerBg: "#0f172a",
       },
       fontFamily: {
         inter: "Inter, sans-serif",

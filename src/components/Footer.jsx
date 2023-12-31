@@ -24,12 +24,12 @@ export default function Footer() {
           
         </div>
 
-        <div className="flex justify-center items-center gap-12 mb-10" id="socials">
+        <div className="flex justify-center items-center gap-12 mb-10 " id="socials">
           <Link to="https://facebook.com">
             <img 
               src={facebook} 
               alt="facebook icon" 
-              className="cursor-pointer"
+              className="cursor-pointer bg-gray-700 rounded-full p-4 hover:bg-primarygreen transition-all" 
             />
           </Link>
           
@@ -37,7 +37,7 @@ export default function Footer() {
             <img 
               src={twitter} 
               alt="twitter icon" 
-              className="cursor-pointer"
+              className="cursor-pointer bg-gray-700 rounded-full p-4 hover:bg-primarygreen transition-all" 
             />
           </Link>
         </div>

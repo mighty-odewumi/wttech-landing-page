@@ -25,7 +25,7 @@ export function TeamCardButton({ id, fb, twitter, youtube }) {
   const btn = btnAssets.map(data => (
     <button 
       key={id}
-      className="border w-full flex justify-center py-6 rounded-b-md rounded-t-sm"
+      className="border w-full flex justify-center py-6 rounded-b-md rounded-t-sm hover:bg-slate-700"
     >
       <Link 
         to={data.link} 

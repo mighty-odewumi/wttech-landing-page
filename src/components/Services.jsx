@@ -29,7 +29,7 @@ export default function Services() {
   const serviceCard = serviceInfo.map((data) => (
       <div 
         key={data.id}
-        className="font-interLight text-center shadow-2xl rounded-2xl py-8 pb-8 px-6 flex flex-col justify-center items-center gap-4 my-6 md:w-1/2 md:m-auto md:my-6 lg:w-1/3" 
+        className="font-interLight text-center shadow-lg rounded-2xl py-8 pb-8 px-6 flex flex-col justify-center items-center gap-4 ring-1 hover:shadow-gray-700 cursor-pointer my-6 md:w-1/2 md:m-auto md:my-6 lg:w-1/3" 
       >
         <img 
           src={data.src} 

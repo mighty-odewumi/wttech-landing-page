@@ -62,7 +62,7 @@ export default function Team() {
   const teamCard = teamInfo.map(data => (
     <div 
       key={data.id}
-      className="border pt-6 flex flex-col gap-4 justify-center shadow-lg rounded-lg"
+      className="pt-6 flex flex-col gap-4 justify-center rounded-lg shadow-lg ring-2 hover:shadow-gray-700 cursor-pointer transition-all"
     >
       <img 
         src={data.src} 
@@ -72,7 +72,7 @@ export default function Team() {
       <h3 className="px-10 text-xl font-bold">{data.name}</h3>
       <h4 className="px-10 text-gray-200">{data.position}</h4>
 
-      <div className="flex justif y-around pt-4">
+      <div className="flex pt-4">
         <TeamCardButton 
           id={data.id}
           fb={data.fbLink}

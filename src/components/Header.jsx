@@ -31,20 +31,16 @@ export default function Header() {
           alt="Hamburger icon"
           className={`${
             toggleNav ? "hidden" : "block"
-          } md:hidden w-6 h-6 cursor-pointer transition-1`}
+          } md:hidden w-6 h-6 cursor-pointer`}
           onClick={alterNav}
         />
 
-        <AnimatePresence>
           <motion.nav
             className={`${
               toggleNav 
-                ? "w-full" 
-                : "hidden"} h-full z-20 text-white fixed top-0 left-0 p-6 text-center text-xl bg-primaryblack uppercase tracking-widest trans ition-all md:bg-transparent md:static md:flex md:px-0
+                ? "h-full" 
+                : "hidden"} w-full z-20 text-white fixed top-0 left-0 p-6 text-center text-xl bg-primaryblack uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0
             `}
-            initial={{ opacity: 0, transform: "translateY(100px)" }}
-            animate={{ opacity: 1, transform: "translateY(0px)", }}
-            exit={{ x: "-100rem" }}
             
           >
             <div className="nav-header flex justify-between items-center">
@@ -66,7 +62,7 @@ export default function Header() {
             </div>
 
             <div className="flex flex-col py-10 md:flex-row md:py-10 md:gap-8 md:font-light md:text-sm">
-              <div className="border border-gray-600 md:hidden"></div>
+              {/* <div className="border border-gray-600 md:hidden"></div> */}
 
               <NavLink
                 style={({ isActive }) => {
@@ -125,10 +121,9 @@ export default function Header() {
                 Login
               </NavLink>
 
-              <div className="border border-gray-600 md:hidden"></div>
+              {/* <div className="border border-gray-600 md:hidden"></div> */}
             </div>
           </motion.nav>
-        </AnimatePresence>
       </header>
     </>
   );

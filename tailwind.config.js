@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primarygreen: "#f60",
+        primarygreen: "#22c55e",
+        primaryblack: "#1e293b",
+        footerBg: "#0f172a",
       },
       fontFamily: {
         inter: "Inter, sans-serif",
@@ -17,4 +19,3 @@ export default {
   },
   plugins: [],
 }
-

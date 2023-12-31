@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hero from "../assets/wttech-assets/hero-assets/hero31.avif";
+import hero from "../assets/wttech-assets/hero-assets/hero36.svg";
 import learnMore from "../assets/wttech-assets/learn-more.svg";
 
 
@@ -15,7 +15,7 @@ export default function Hero() {
           <img 
             src={hero} 
             alt="hero icon" 
-            className="w-full lg:w-[110vw] xl:pr-10"
+            className="w-full lg:w-[110vw] xl:pr-10 "
           />
         </div>
 

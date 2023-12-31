@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import serviceImg1 from "../assets/wttech-assets/activity.svg";
+import serviceImg2 from "../assets/wttech-assets/video.svg"
+import serviceImg3 from "../assets/wttech-assets/activity.svg"
+
 
 export default function Services() {
 
@@ -7,14 +11,14 @@ export default function Services() {
       id: 1,
       title: "graphic design",
       text: "Transform your ideas into visual masterpieces with our graphic design expertise. From eye-catching logos to stunnign marketing collateral, we craft designs that leave a lasting impression.",
-      src: "./src/assets/wttech-assets/activity.svg", 
+      src: serviceImg1, 
     },
 
     {
       id: 2,
       title: "video editing",
       text: "Bring your story to life through video editing prowess. We seamlessly blend visuals, sound, and effects to create captivating narratives that resonate with your audience. Elevate your content with our cinematic touch.",
-      src: "./src/assets/wttech-assets/video.svg",      
+      src: serviceImg2,      
     },
 
     {
@@ -22,7 +26,7 @@ export default function Services() {
       title: "website design",
       
       text: "Forge a strong online presence with our cutting-edge web design solutions. We create responsive and visually stunning websites that not only captivate your audience but also provide an intuitive user experience.",
-      src: "./src/assets/wttech-assets/activity.svg",
+      src: serviceImg3,
     },
   ];
 

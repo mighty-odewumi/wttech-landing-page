@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import imgPath1 from "../assets/team-assets/icon-facebook.svg";
+import imgPath2 from "../assets/team-assets/icon-twitter.svg";
+import imgPath3 from "../assets/team-assets/youtube.svg";
 
 
 // eslint-disable-next-line react/prop-types
@@ -6,17 +9,17 @@ export function TeamCardButton({ id, fb, twitter, youtube }) {
 
   const btnAssets = [
     {
-      imgPath: "../src/assets/team-assets/icon-facebook.svg",
+      imgPath: imgPath1,
       link: fb,
     },
 
     {
-      imgPath: "../src/assets/team-assets/icon-twitter.svg",
+      imgPath: imgPath2,
       link: twitter,
     },
 
     {
-      imgPath: "../src/assets/team-assets/youtube.svg",
+      imgPath: imgPath3,
       link: youtube,
     },
     
@@ -37,7 +40,6 @@ export function TeamCardButton({ id, fb, twitter, youtube }) {
           className=""
         />
       </Link>
-      
     </button>
   ));
 

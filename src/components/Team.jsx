@@ -1,4 +1,10 @@
 import { TeamCardButton } from "./TeamCardButton";
+import teamMate1 from "../assets/team-assets/teamImg1.avif";
+import teamMate2 from "../assets/team-assets/teamImg2.avif";
+import teamMate3 from "../assets/team-assets/teamImg3.avif";
+import teamMate4 from "../assets/team-assets/teamImg7.avif";
+import teamMate5 from "../assets/team-assets/teamImg9.jpg";
+
 
 export default function Team() {
 
@@ -7,7 +13,7 @@ export default function Team() {
       id: 1,
       name: "Blake Gentleman",
       position: "Visionary",
-      src: "./src/assets/team-assets/teamImg1.avif", 
+      src: teamMate1, 
       fbLink: "https://facebook.com",
       twitterLink: "https://twitter.com",
       youtubeLink: "https://youtube.com",
@@ -17,7 +23,7 @@ export default function Team() {
       id: 2,
       name: "Dickson Houston",
       position: "Backend Engineer",
-      src: "./src/assets/team-assets/teamImg2.avif", 
+      src: teamMate2, 
       fbLink: "https://facebook.com",
       twitterLink: "https://twitter.com",
       youtubeLink: "https://youtube.com",
@@ -27,7 +33,7 @@ export default function Team() {
       id: 3,
       name: "Wutoma Nakamoto",
       position: "Video Designer",
-      src: "./src/assets/team-assets/teamImg3.avif", 
+      src: teamMate3, 
       fbLink: "https://facebook.com",
       twitterLink: "https://twitter.com",
       youtubeLink: "https://youtube.com",
@@ -37,7 +43,7 @@ export default function Team() {
       id: 4,
       name: "Jack Reacher",
       position: "Frontend Developer",
-      src: "./src/assets/team-assets/teamImg7.avif", 
+      src: teamMate4, 
       fbLink: "https://facebook.com",
       twitterLink: "https://twitter.com",
       youtubeLink: "https://youtube.com",
@@ -47,7 +53,7 @@ export default function Team() {
       id: 5,
       name: "Iann Stonewall",
       position: "AI Researcher",
-      src: "./src/assets/team-assets/teamImg9.jpg", 
+      src: teamMate5, 
       fbLink: "https://facebook.com",
       twitterLink: "https://twitter.com",
       youtubeLink: "https://youtube.com",

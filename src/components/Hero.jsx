@@ -15,7 +15,7 @@ export default function Hero() {
           <img 
             src={hero} 
             alt="hero icon" 
-            className="w-full lg:w-[110vw] xl:pr-10"
+            className="w-full lg:w-[110vw] xl:pr-10 "
           />
         </div>
 

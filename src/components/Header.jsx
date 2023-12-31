@@ -38,8 +38,8 @@ export default function Header() {
           <motion.nav
             className={`${
               toggleNav 
-                ? "h-full" 
-                : "hidden"} w-full z-20 text-white fixed top-0 left-0 p-6 text-center text-xl bg-primaryblack uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0
+                ? "w-full" 
+                : "hidden"} h-full z-20 text-white fixed top-0 left-0 p-6 text-center text-xl bg-primaryblack uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0
             `}
             
           >

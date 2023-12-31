@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import logo from "../assets/wttech-assets/logo-new-edit1.png";
 import hamburger from "../assets/wttech-assets/icon-hamburger.svg";
 import close from "../assets/wttech-assets/icon-close.svg";
@@ -41,7 +41,6 @@ export default function Header() {
                 ? "w-full" 
                 : "hidden"} h-full z-20 text-white fixed top-0 left-0 p-6 text-center text-xl bg-primaryblack uppercase tracking-widest transition-all md:bg-transparent md:static md:flex md:px-0
             `}
-            
           >
             <div className="nav-header flex justify-between items-center">
               <Link to="/" className="flex justify-center items-center gap-2 md:hidden">

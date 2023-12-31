@@ -14,6 +14,8 @@ export default {
       fontFamily: {
         inter: "Inter, sans-serif",
         interLight: "Inter-light, sans-serif",
+      },
+      animate: {
       }
     },
   },

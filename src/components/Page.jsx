@@ -10,8 +10,9 @@ export default function Page() {
     <>
       <motion.div 
         className=""
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, delay: 1, type: "spring", }}
+        initial={{ opacity: 0, transform: "translateX(-100px)" }}
+        animate={{ opacity: 1, transform: "translateX(0px)" }}
+        transition={{ type: "tween",  ease: "easeOut", delay: .5, }}
       >
         <Header />
 

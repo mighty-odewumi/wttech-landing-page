@@ -7,14 +7,14 @@ export default function ComingSoon() {
     <>
       <Header />
 
-      <div className="flex flex-col justify-center items-center h-full text-center px-4 py-6">
+      <div className="flex flex-col justify-center items-center h-screen text-center px-4">
         <img 
           src={comingSoon}
           className="" 
         />
 
         <h1 className="font-inter mt-4">
-          Site currently under construction. Please check again later.
+          This page is currently under construction. Please check again later.
         </h1> 
          
       </div>

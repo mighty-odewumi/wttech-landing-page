@@ -68,7 +68,7 @@ export default function Team() {
   const teamCard = teamInfo.map(data => (
     <div 
       key={data.id}
-      className="pt-6 flex flex-col gap-4 justify-center rounded-lg shadow-lg ring-2 hover:shadow-gray-700 cursor-pointer transition-all"
+      className="pt-6 flex flex-col gap-4 justify-center rounded-lg shadow-lg ring-2 hover:shadow-gray-700 transition-all"
     >
       <img 
         src={data.src} 
@@ -97,7 +97,7 @@ export default function Team() {
       </h3>
       <h4 className="text-4xl font-bold mt-3">Meet The Team</h4>
 
-      <div className="flex flex-col gap-10 mt-10 mb-20 md:flex-row md:overflow-auto md:whitespace-nowrap">
+      <div className="flex flex-col gap-10 mt-10 mb-20 md:flex-row md:overflow-auto md:whitespace-nowrap p-4">
         {teamCard}
       </div>
     </>

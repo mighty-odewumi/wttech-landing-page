@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import imgPath1 from "../assets/team-assets/icon-facebook.svg";
-import imgPath2 from "../assets/team-assets/icon-twitter.svg";
-import imgPath3 from "../assets/team-assets/youtube.svg";
+import imgPath1 from "../assets/team-assets/icons/icon-facebook.svg";
+import imgPath2 from "../assets/team-assets/icons/icon-twitter.svg";
+import imgPath3 from "../assets/team-assets/icons/youtube.svg";
 
 
 // eslint-disable-next-line react/prop-types

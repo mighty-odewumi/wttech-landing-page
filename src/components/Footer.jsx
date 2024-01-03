@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/wttech-assets/logo-new-edit1.png";
-import facebook from "../assets/team-assets/icon-facebook.svg";
-import twitter from "../assets/team-assets/icon-twitter.svg";
+import facebook from "../assets/team-assets/icons/icon-facebook.svg";
+import twitter from "../assets/team-assets/icons/icon-twitter.svg";
 
 
 export default function Footer() {
@@ -24,8 +24,8 @@ export default function Footer() {
           
         </div>
 
-        <div className="flex justify-center items-center gap-12 mb-10 " id="socials">
-          <Link to="https://facebook.com">
+        <div className="flex justify-center items-center gap-12 mb-10 md:gap-5" id="socials">
+          <Link to="https://facebook.com/profile.php?id=61554725091629&mibextid=ZbWKwL">
             <img 
               src={facebook} 
               alt="facebook icon" 

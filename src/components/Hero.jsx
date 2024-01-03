@@ -1,17 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import hero from "../assets/wttech-assets/hero-assets/hero36.svg";
 import learnMore from "../assets/wttech-assets/learn-more.svg";
-import { useState } from "react";
-import Video from "./Video";
 
 
-export default function Hero() {
-
-  const [showVid, setShowVid] = useState(false);
-
-  function showVideoFunc() {
-    setShowVid(true);
-  }
+export default function Hero({ showVideoFunc }) {
 
   return (
     <>
@@ -58,10 +51,6 @@ export default function Hero() {
           </div>
 
         </div>
-
-        {
-          showVid && <Video />
-        }
       </div>
     </>
   )

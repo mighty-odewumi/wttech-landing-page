@@ -1,13 +1,10 @@
-import vid from "../assets/animation1.gif";
-
-
 export default function Video() {
   return (
     <>
       <video 
-        src={vid}
-        className="ring-2 w-96 m-auto px-6"
-        
+        src="https://youtu.be/KbUBbJMoLlw?si=7ZHgdYRQ_vTVpiFj"
+        className="ring-2 w-full max-w-96 m-auto rounded-md mt-10"
+        controls
       >
 
       </video>

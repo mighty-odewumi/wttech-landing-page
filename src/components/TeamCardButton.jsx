@@ -2,10 +2,18 @@ import { Link } from "react-router-dom";
 import imgPath1 from "../assets/team-assets/icons/icon-facebook.svg";
 import imgPath2 from "../assets/team-assets/icons/icon-twitter.svg";
 import imgPath3 from "../assets/team-assets/icons/youtube.svg";
+import imgPath4 from "../assets/team-assets/icons/instagram.png";
+import imgPath5 from "../assets/team-assets/icons/envelopes.svg";
 
+
+/* 
+  TODOs:
+  # Make it so that only images with valid links are displayed
+  # 
+*/
 
 // eslint-disable-next-line react/prop-types
-export function TeamCardButton({ id, fb, twitter, youtube }) {
+export function TeamCardButton({ id, fb, twitter, youtube, email, instagram }) {
 
   const btnAssets = [
     {
@@ -22,6 +30,8 @@ export function TeamCardButton({ id, fb, twitter, youtube }) {
       imgPath: imgPath3,
       link: youtube,
     },
+
+    
     
   ];
 
@@ -36,7 +46,7 @@ export function TeamCardButton({ id, fb, twitter, youtube }) {
       >
         <img 
           src={data.imgPath} 
-          alt="facebook icon" 
+          alt="icon" 
           className=""
         />
       </Link>

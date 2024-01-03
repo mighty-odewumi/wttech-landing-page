@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "myCol": "repeat(auto-fit, minmax(400px, 1fr))",
+      },
       colors: {
         primarygreen: "#22c55e",
         primaryblack: "#1e293b",
@@ -21,3 +24,4 @@ export default {
   },
   plugins: [],
 }
+

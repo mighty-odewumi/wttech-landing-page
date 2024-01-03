@@ -1,8 +1,6 @@
+import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-import Hero from "./Hero";
-import Services from "./Services";
-import Team from "./Team";
 import { motion } from "framer-motion";
 
 export default function Page() {
@@ -16,15 +14,10 @@ export default function Page() {
       >
         <Header />
 
-        <Hero />
-
-        <main className="text-center font-inter mx-6 md:mx-20">
-          <Services />
-
-          <Team />
-        </main>
+        <Outlet />
 
         <Footer />
+
       </motion.div>
     </>
   )

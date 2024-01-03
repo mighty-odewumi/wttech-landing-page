@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import hero from "../assets/wttech-assets/hero-assets/hero36.svg";
 import learnMore from "../assets/wttech-assets/learn-more.svg";
 
 
-export default function Hero() {
+export default function Hero({ showVideoFunc }) {
+
   return (
     <>
       <div 
@@ -34,7 +36,11 @@ export default function Hero() {
               Get Started
             </Link>
 
-            <Link to="/" className="py-3 px-4 font-bold rounded-lg hover:border hover:border-gray-400 hover:bg-transparent  transition-all flex justify-center items-center gap-2 md:gap-4 w-1/2 text-center md:w-full">
+            <Link 
+              onClick={showVideoFunc}
+              to="/" 
+              className="py-3 px-4 font-bold rounded-lg hover:border hover:border-gray-400 hover:bg-transparent  transition-all flex justify-center items-center gap-2 md:gap-4 w-1/2 text-center md:w-full"
+            >
               <img 
                 src={learnMore}
                 alt="learn more icon" 

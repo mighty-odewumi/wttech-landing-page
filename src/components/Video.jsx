@@ -1,13 +1,13 @@
 export default function Video() {
   return (
     <>
-      <video 
-        src="https://youtu.be/KbUBbJMoLlw?si=7ZHgdYRQ_vTVpiFj"
+      <iframe 
+        src="https://www.youtube.com/embed/KbUBbJMoLlw?controls=1&mute=1&autoplay=1&loop=1"
         className="ring-2 w-full max-w-96 m-auto rounded-md mt-10"
-        controls
+        height="400"
       >
 
-      </video>
+      </iframe>
     </>
   )
 }

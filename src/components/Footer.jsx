@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/wttech-assets/logo-new-edit1.png";
-import facebook from "../assets/team-assets/icon-facebook.svg";
-import twitter from "../assets/team-assets/icon-twitter.svg";
+import facebook from "../assets/team-assets/icons/icon-facebook.svg";
+import twitter from "../assets/team-assets/icons/icon-twitter.svg";
 
 
 export default function Footer() {

@@ -32,7 +32,7 @@ export default function Hero({ showVideoFunc }) {
 
           <div className="flex justify-center items-center gap-3 md:justify-start
           ">
-            <Link to="/" className="bg-primarygreen text-slate-100 py-3 px-6 font-bold rounded-lg hover:border hover:border-primarygreen hover:bg-transparent hover:text-green-500 transition-all w-1/2 text-center md:w-full">
+            <Link to="https://wa.me/message/SF6ND57L45O6H1" className="bg-primarygreen text-slate-100 py-3 px-6 font-bold rounded-lg hover:border hover:border-primarygreen hover:bg-transparent hover:text-green-500 transition-all w-1/2 text-center md:w-full">
               Get Started
             </Link>
 

@@ -85,7 +85,7 @@ export default function Services() {
           Services
         </h3>
 
-        <h4 className="text-4xl font-bold mt-3">Our Vision & Our Goal</h4>
+        <h4 className="text-4xl font-bold mt-3">What We Offer</h4>
 
         <div className="mt-10 lg:grid lg:grid-flow-row-dense lg:grid-rows-2 lg:grid-cols-myCol md:gap-10 ">
           {serviceCard}

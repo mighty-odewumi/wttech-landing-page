@@ -1,69 +1,13 @@
 import { TeamCardButton } from "./TeamCardButton";
-import teamMate1 from "../assets/team-assets/teamImg1.avif";
-import teamMate2 from "../assets/team-assets/teamImg2.avif";
-import teamMate3 from "../assets/team-assets/teamImg3.avif";
-import teamMate4 from "../assets/team-assets/teamImg7.avif";
-import teamMate5 from "../assets/team-assets/teamImg9.jpg";
+import { teamInfo } from "./teamInfo";
 
+
+/* 
+  TODOs: 
+  # Replace details of team members
+*/
 
 export default function Team() {
-
-  const teamInfo = [
-    {
-      id: 1,
-      name: "Blake Gentleman",
-      position: "Visionary",
-      src: teamMate1, 
-      fbLink: "https://facebook.com",
-      twitterLink: "https://twitter.com",
-      youtubeLink: "https://youtube.com",
-    },
-
-    {
-      id: 2,
-      name: "Dickson Houston",
-      position: "Backend Engineer",
-      src: teamMate2, 
-      fbLink: "https://facebook.com",
-      twitterLink: "https://twitter.com",
-      youtubeLink: "https://youtube.com",
-    },
-
-    {
-      id: 3,
-      name: "Wutoma Nakamoto",
-      position: "Video Designer",
-      src: teamMate3, 
-      fbLink: "https://facebook.com",
-      twitterLink: "https://twitter.com",
-      youtubeLink: "https://youtube.com",
-    },
-
-    {
-      id: 4,
-      name: "Jack Reacher",
-      position: "Frontend Developer",
-      src: teamMate4, 
-      fbLink: "https://facebook.com",
-      twitterLink: "https://twitter.com",
-      youtubeLink: "https://youtube.com",
-    },
-
-    {
-      id: 5,
-      name: "Iann Stonewall",
-      position: "AI Researcher",
-      src: teamMate5, 
-      fbLink: "https://facebook.com",
-      twitterLink: "https://twitter.com",
-      youtubeLink: "https://youtube.com",
-    },
-
-  ];
-
-  /*
-  Sammy, Dieko, Wttech, Gr1ntch, Iyanu
-  */
 
   const teamCard = teamInfo.map(data => (
     <div 
@@ -73,10 +17,20 @@ export default function Team() {
       <img 
         src={data.src} 
         alt="team member"
-        className="rounded-full w-20 m-auto" 
+        className="rounded-full w-32 m-auto border-4 " 
       />
       <h3 className="px-10 text-xl font-bold">{data.name}</h3>
       <h4 className="px-10 text-gray-200">{data.position}</h4>
+
+      {/* <p className="">
+        <img 
+          src="#" 
+          alt="icon" 
+          className=""
+        />
+
+        
+      </p> */}
 
       <div className="flex pt-4">
         <TeamCardButton 
@@ -84,6 +38,8 @@ export default function Team() {
           fb={data.fbLink}
           twitter={data.twitterLink}
           youtube={data.youtubeLink}
+          email={data.email}
+          instagram={data.instagram}
         />
         
       </div>

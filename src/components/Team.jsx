@@ -12,6 +12,7 @@ export default function Team() {
   const teamCard = teamInfo.map(data => (
     <div 
       key={data.id}
+      id="team-card"
       className="pt-6 flex flex-col gap-4 justify-center rounded-lg shadow-lg ring-2 hover:shadow-gray-700 transition-all"
     >
       <img 
@@ -32,7 +33,7 @@ export default function Team() {
         
       </p> */}
 
-      <div className="flex pt-4">
+      <section className="flex pt-4">
         <TeamCardButton 
           id={data.id}
           fb={data.fbLink}
@@ -40,9 +41,12 @@ export default function Team() {
           youtube={data.youtubeLink}
           email={data.email}
           instagram={data.instagram}
+          linkedIn={data.linkedIn}
+          github={data.github}
+          data={data}
         />
         
-      </div>
+      </section>
     </div>
   ));
 
@@ -53,7 +57,7 @@ export default function Team() {
       </h3>
       <h4 className="text-4xl font-bold mt-3">Meet The Team</h4>
 
-      <div className="flex flex-col gap-10 mt-10 mb-20 md:flex-row md:overflow-auto md:whitespace-nowrap p-4">
+      <div id="team-card-container" className="flex flex-col gap-10 mt-10 mb-20 md:flex-row md:overflow-auto md:whitespace-nowrap p-4">
         {teamCard}
       </div>
     </>

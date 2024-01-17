@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/wttech-assets/logo-new-edit1.png";
-import facebook from "../assets/team-assets/icons/facebook3.svg";
-import linkedin from "../assets/team-assets/icons/linkedin.png";
+import facebook from "../assets/team-assets/icons/facebook5.svg";
+import linkedin from "../assets/team-assets/icons/linkedin3.svg";
 
 
 export default function Footer() {
@@ -29,7 +29,7 @@ export default function Footer() {
             <img 
               src={facebook} 
               alt="facebook icon" 
-              className="cursor-pointer bg-white rounded-full p-2 hover:bg-primarygreen transition-all w-12" 
+              className="cursor-pointer rounded-full  hover:bg-primarygreen transition-all " 
             />
           </Link>
           
@@ -37,7 +37,7 @@ export default function Footer() {
             <img 
               src={linkedin} 
               alt="twitter icon" 
-              className="cursor-pointer bg-white rounded-full p-2 hover:bg-primarygreen transition-all w-12" 
+              className="cursor-pointer rounded-full  hover:bg-primarygreen transition-all " 
             />
           </Link>
         </div>

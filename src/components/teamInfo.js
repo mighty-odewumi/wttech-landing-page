@@ -7,7 +7,6 @@ import teamMate6 from "../assets/team-assets/members/success-edit1.jpg";
 // import teamMate7 from "../assets/team-assets/members/teamImg9.jpg";
 // import teamMate8 from "../assets/team-assets/members/teamImg9.jpg";
 
-
 export const teamInfo = [
 
   {
@@ -15,7 +14,7 @@ export const teamInfo = [
     name: "Samuel Adediran",
     position: "Visionary",
     src: teamMate1, 
-    email: "tel:samueladediran17@gmail.com",
+    email: "mailto:samueladediran17@gmail.com",
   },
 
   {
@@ -23,7 +22,8 @@ export const teamInfo = [
     name: "Diekololaoluwa Ogundeyi",
     position: "Backend Engineer",
     src: teamMate2, 
-    fbLink: "https://facebook.com",
+    instagram: "https://instagram.com/_diekololaoluwa",
+    twitterLink: "https://twitter.com/Soulbroda23",
   },
 
   {
